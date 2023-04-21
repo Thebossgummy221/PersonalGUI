@@ -2,12 +2,8 @@ package com.musicfx.musicfxfun;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.*;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 
@@ -15,7 +11,6 @@ import java.io.File;
 import java.net.URL;
 import java.util.LinkedList;
 import java.util.ResourceBundle;
-import java.util.Scanner;
 
 public class MusicController implements Initializable {
     public ComboBox<String> comboBox1 = new ComboBox<>();
@@ -50,7 +45,7 @@ public class MusicController implements Initializable {
 
     }
 
-    public void play(ActionEvent actionEvent) {
+    public void play() {
        if(MP!=null){
            MP.stop();
        }
@@ -67,7 +62,7 @@ public class MusicController implements Initializable {
 
     }
 
-    public void stop(ActionEvent actionEvent) {
+    public void stop() {
        if(MP!=null){
            MP.stop();
        }
